@@ -8,6 +8,14 @@
     margin-top: -50px;
 }
 
+.margintop-30 {
+    margin-top: -30px;
+}
+
+.mh-100 {
+    max-height: 100%;
+}
+
 .flip {
     transform: scaleX(-1);
 }
