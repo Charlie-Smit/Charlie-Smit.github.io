@@ -19,3 +19,8 @@
 .flip {
     transform: scaleX(-1);
 }
+
+.bigger-nav {
+    font-size: 2em;
+    padding: 10px;
+}
