@@ -1,7 +1,7 @@
 .firetile {
     background:#000 url('../img/Firefortile.gif') top left;
     background-color: transparent;
-    min-height: 103px;
+    height: 103px;
 }
 
 .margintop-50 {
