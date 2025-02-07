@@ -24,3 +24,10 @@
     font-size: 2em;
     padding: 10px;
 }
+
+.rainbow-text {
+    background: linear-gradient(to right, orange , yellow, rgb(104, 221, 68), cyan, rgb(56, 126, 255), violet, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
