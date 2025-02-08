@@ -6,7 +6,6 @@ $( document ).ready(function() {
         
         var $explosion = $('<img>', {
             src: '../img/explosion2.gif?n='+num,
-            alt: 'Explosion!',
             class: 'explosion'
         });
 
