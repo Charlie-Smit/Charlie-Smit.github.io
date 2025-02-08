@@ -4,9 +4,8 @@ $( document ).ready(function() {
         var clickX = event.pageX;
         var clickY = event.pageY;
         
-        // Create a new image element for each click
         var $explosion = $('<img>', {
-            src: 'img/explosion.gif', // Replace with your explosion GIF URL
+            src: '../img/explosion.gif',
             alt: 'Explosion!',
             class: 'explosion'
         }).css({
