@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var num = 0;
+    var num = Math.random();
     $(document).on('click', function(event) {
         var clickX = event.pageX;
         var clickY = event.pageY;
