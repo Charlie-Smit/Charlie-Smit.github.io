@@ -1,11 +1,12 @@
 $( document ).ready(function() {
-    var num = Math.random();
+    let num = Math.random();
     $(document).on('click', function(event) {
-        var clickX = event.pageX;
-        var clickY = event.pageY;
-        
-        var $explosion = $('<img>', {
-            src: '../img/explosion2.gif?n='+num,
+        let clickX = event.pageX;
+        let clickY = event.pageY;
+        let location = window.location.protocol !== "file:"? '../img/explosion2.gif?n='+num : 'img/explosion2.gif';
+
+        let $explosion = $('<img>', {
+            src: location,
             class: 'explosion'
         });
 
@@ -15,7 +16,7 @@ $( document ).ready(function() {
         });
 
         $('body').append($explosion);
-        num=(num+1);// % 4;
+        num=(num+1);
 
         setTimeout(function() {
             $explosion.fadeOut(function() {
