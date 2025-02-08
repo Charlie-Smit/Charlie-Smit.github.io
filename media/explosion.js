@@ -5,7 +5,7 @@ $( document ).ready(function() {
         var clickY = event.pageY;
         
         var $explosion = $('<img>', {
-            src: '../img/explosion'+num+'.gif',
+            src: '../img/explosion1.gif?n='+num,
             alt: 'Explosion!',
             class: 'explosion'
         });
@@ -16,7 +16,7 @@ $( document ).ready(function() {
         });
 
         $('body').append($explosion);
-        num=(num+1) % 4;
+        num=(num+1);// % 4;
 
         setTimeout(function() {
             $explosion.fadeOut(function() {
