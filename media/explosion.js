@@ -10,8 +10,8 @@ $( document ).ready(function() {
             alt: 'Explosion!',
             class: 'explosion'
         });
-        console.log('css:'$explosion.length);
-        
+        console.log('css:'+$explosion.length);
+
         $explosion.css({
             left: clickX - 50 + 'px',
             top: clickY - 70 + 'px'
