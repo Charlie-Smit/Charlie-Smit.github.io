@@ -5,14 +5,14 @@ $( document ).ready(function() {
         var clickY = event.pageY;
         
         var $explosion = $('<img>', {
-            src: '../img/explosion1.gif?n='+num,
+            src: '../img/explosion2.gif?n='+num,
             alt: 'Explosion!',
             class: 'explosion'
         });
 
         $explosion.css({
-            left: clickX - 50 + 'px',
-            top: clickY - 70 + 'px'
+            left: clickX - 78 + 'px',
+            top: clickY - 115 + 'px'
         });
 
         $('body').append($explosion);
