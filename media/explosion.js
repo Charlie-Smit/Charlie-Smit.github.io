@@ -4,24 +4,28 @@ $( document ).ready(function() {
         var clickX = event.pageX;
         var clickY = event.pageY;
         
+        console.log('clickx:'+clickX+', y:'+clickY);
         var $explosion = $('<img>', {
             src: '../img/explosion.gif',
             alt: 'Explosion!',
             class: 'explosion'
-        }).css({
-            left: clickX - 50 + 'px', // Center explosion at the click point
+        });
+        console.log('css:'$explosion.length);
+        
+        $explosion.css({
+            left: clickX - 50 + 'px',
             top: clickY - 70 + 'px'
         });
         console.log('explode!');
+        console.log($('body').length);
         $('body').append($explosion);
 
-        // Hide the explosion after 1.6 seconds
         setTimeout(function() {
             $explosion.fadeOut(function() {
                 $(this).remove();
                 console.log('removing!');
             });
-        }, 1600); // 1600 milliseconds = 1.6 seconds
+        }, 1600);
     });
 
     console.log('event registered');
