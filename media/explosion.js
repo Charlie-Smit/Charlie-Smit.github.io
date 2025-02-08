@@ -25,7 +25,7 @@ $( document ).ready(function() {
                 $(this).remove();
                 console.log('removing!');
             });
-        }, 1600);
+        }, 1000);
     });
 
     console.log('event registered');
