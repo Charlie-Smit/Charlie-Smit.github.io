@@ -37,3 +37,11 @@
 .heightonehalf {
     height: 1.5em;
 }
+
+.explosion {
+    position: absolute;
+    display: none;
+    width: 139px;
+    height: 100px;
+    z-index: 9999;
+}
