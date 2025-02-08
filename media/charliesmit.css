@@ -44,3 +44,8 @@
     height: 229px;
     z-index: 9999;
 }
+.transparentbg
+{
+    background-image: none !important;
+    background-color: transparent !important;
+}
