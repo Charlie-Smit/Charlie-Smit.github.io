@@ -22,6 +22,6 @@ $( document ).ready(function() {
             $explosion.fadeOut(function() {
                 $(this).remove();
             });
-        }, 1000);
+        }, 800);
     });
 });
