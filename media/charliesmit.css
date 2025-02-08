@@ -33,3 +33,7 @@
     text-shadow: none !important;
     color: revert !important;
 }
+
+.heightonehalf {
+    height: 1.5em;
+}
