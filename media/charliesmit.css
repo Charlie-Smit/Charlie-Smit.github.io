@@ -50,3 +50,41 @@
     background-color: transparent !important;
     border-width: 0px !important;
 }
+
+#walk-container {
+    overflow: hidden;
+}
+
+img.walk-lt {
+    position: absolute;
+    bottom: 0;
+    max-height: 120px;
+    animation: walking-lt 14s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes walking-lt {
+    0% {
+        right: -10%;
+    }
+    100% {
+        right: 102%;
+    }
+}
+
+img.walk-rt {
+    position: absolute;
+    bottom: 0;
+    max-height: 120px;
+    animation: walking-rt 14s linear infinite;
+    overflow: hidden;
+}
+  
+@keyframes walking-rt {
+    0% {
+        left: -5%;
+    }
+    100% {
+        left: 102%;
+    }
+}
